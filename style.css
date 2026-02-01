@@ -52,25 +52,44 @@ body {
 
 .confirm-btn {
     width: 100%;
-    margin-top: 16px;
-    padding: 16px 24px;
+    margin-top: 20px;
+    padding: 18px 28px;
     font-size: 18px;
     font-weight: 600;
+    letter-spacing: 0.04em;
     color: white;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    text-transform: uppercase;
+    background: linear-gradient(145deg, #667eea 0%, #764ba2 100%);
     border: none;
     border-radius: 14px;
     cursor: pointer;
-    box-shadow: 0 6px 24px rgba(102, 126, 234, 0.35);
+    box-shadow:
+        0 4px 0 rgba(88, 69, 156, 0.5),
+        0 8px 24px rgba(102, 126, 234, 0.4);
     font-family: inherit;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .confirm-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 28px rgba(102, 126, 234, 0.45);
+    box-shadow:
+        0 6px 0 rgba(88, 69, 156, 0.45),
+        0 12px 32px rgba(102, 126, 234, 0.5);
+    background: linear-gradient(145deg, #7289f0 0%, #8559b3 100%);
 }
 
 .confirm-btn:active {
-    transform: translateY(0);
+    transform: translateY(2px);
+    box-shadow:
+        0 2px 0 rgba(88, 69, 156, 0.5),
+        0 4px 16px rgba(102, 126, 234, 0.35);
+}
+
+.confirm-btn:focus {
+    outline: none;
+    box-shadow:
+        0 4px 0 rgba(88, 69, 156, 0.5),
+        0 8px 24px rgba(102, 126, 234, 0.4),
+        0 0 0 3px rgba(102, 126, 234, 0.4);
 }
